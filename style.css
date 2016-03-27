@@ -1,0 +1,36 @@
+/*
+ Theme Name:   Arroyo Ensured Square Dotted Borders
+ Theme URI:    https://themetry.com/square-dotted-borders/
+ Description:  This is a child theme of Themetry's Arroyo theme, used to demonstrate cross-browser square dotted borders.
+ Author:       Themetry
+ Author URI:   https://themetry.com
+ Template:     arroyo
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  arroyo-ensured-square-dotted-borders
+*/
+
+.widget-title:after,
+.widgettitle:after {
+	background: url('border.svg');
+	border-width: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1298px) {
+	.blog .hentry .entry-title:before,
+	.blog .hentry .entry-title:after {
+		background: url('border.svg');
+		border-width: 0;
+	}
+}
+
+@media (min-width: 1299px) {
+	.blog .hentry:nth-of-type(4n+1) .entry-title:before,
+	.blog .hentry:nth-of-type(4n+1) .entry-title:after,
+	.blog .hentry:nth-of-type(4n+2) .entry-title:before,
+	.blog .hentry:nth-of-type(4n+2) .entry-title:after {
+		background: url('border.svg');
+		border-width: 0;
+	}
+}
